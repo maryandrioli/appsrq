@@ -24,9 +24,11 @@
     <script src="script.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js')
-                .then((registration) => console.log('ServiceWorker registrado'))
-                .catch((err) => console.log('Erro no registro do ServiceWorker:', err));
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js', {scope: './'})
+                    .then(registration => console.log('SW registrado'))
+                    .catch(err => console.log('Erro SW:', err));
+            });
         }
     </script>
 </body>
