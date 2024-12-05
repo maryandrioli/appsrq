@@ -1,10 +1,10 @@
 document.addEventListener('keydown', handleKeyPress);
 let sounds = {
-    green: new Audio('sons/1.wav'),
-    red: new Audio('sons/2.wav'),
-    yellow: new Audio('sons/3.wav'),
-    blue: new Audio('sons/4.wav'),
-    orange: new Audio('sons/5.wav')
+    green: new Audio('sons/1.mp3'),
+    red: new Audio('sons/2.mp3'),
+    yellow: new Audio('sons/3.mp3'),
+    blue: new Audio('sons/4.mp3'),
+    orange: new Audio('sons/5.mp3')
 };
 let concurrentPlay = false;
 
